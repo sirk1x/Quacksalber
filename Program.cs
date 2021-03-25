@@ -46,7 +46,7 @@ namespace QuickConvert
                 //wait for ffmpeg to exit
                 while (!_pcs.HasExited) System.Threading.Thread.Sleep(16);
                 //delete the old file
-                Delete(_f);
+                Delete(OutPath +_f);
                 //continue
             }
         }
